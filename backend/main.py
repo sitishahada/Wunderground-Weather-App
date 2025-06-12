@@ -1,9 +1,9 @@
 # === backend/main.py ===
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from backend.database import SessionLocal, engine
-from backend.models import Base, WeatherData
-from backend.scraper import run_scraper
+from database import SessionLocal, engine
+from models import Base, WeatherData
+from scraper import run_scraper
 from sqlalchemy.orm import Session
 from datetime import date
 
